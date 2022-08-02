@@ -9,17 +9,21 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class homepage extends AppCompatActivity {
     private static final String TAG = "homepage";
+   // TextView receiver_msg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Intent intent = getIntent();
-        String str = intent.getStringExtra("message_key");
 
+      //  receiver_msg = (TextView) findViewById(R.id.username);
+      //  Intent intent = getIntent();
+      //  String str = intent.getStringExtra("message_key");
+      //  receiver_msg.setText(str);
         Toast.makeText(this, "onCreate MainActivity", Toast.LENGTH_SHORT).show();
         Log.d(TAG, "onCreate MainActivity");
         setContentView(R.layout.activity_homepage);

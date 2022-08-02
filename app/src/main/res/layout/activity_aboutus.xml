@@ -68,20 +68,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/aboutus"
+                android:justificationMode="inter_word"
                 android:textSize="20sp"
-                android:padding="20dp"/>
-
-
-
+                android:padding="20sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="#6D7973"
                 android:textColor="@color/white"
-                android:text="@string/aboutus"
+                android:text="Contact Us  -   (800)555-1234                Email            -   arzu@gmail.com"
                 android:textSize="20sp"
                 android:padding="20dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/insta"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:onClick="fbClick"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/facebook"/>
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="100dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/whatsapp"/>
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
