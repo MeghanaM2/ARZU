@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ArZu</string>
+    <string name="aboutus">The TextView class is a subclass of the View class that displays text on the screen. You can control how the text appears with TextView attributes in the XML layout file. This practical shows how to work with multiple TextView elements, including one in which the user can scroll its contents vertically.If you have more information than fits on the device\'s display, you can create a scrolling view so that the user can scroll vertically by swiping up or down, or horizontally by swiping right or left.</string>
+    <string name="action_settings">Settings</string>
+</resources>
