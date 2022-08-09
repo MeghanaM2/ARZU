@@ -65,7 +65,8 @@
         android:layout_height="608dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2">
 
 
         <LinearLayout
@@ -74,17 +75,194 @@
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="@id/textView">
 
-            <FrameLayout
+            <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:padding="20dp">
 
-                <ImageView
-                    android:layout_width="fill_parent"
-                    android:layout_height="250sp"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/bg1" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/radioGroup">
+                    <RadioButton
+                        android:id="@+id/roundtrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Round Trip"
+                        android:checked="true"
+                       />
+                    <RadioButton
+                        android:id="@+id/oneway"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="One way"
+                        />
+                    </RadioGroup>
+<!--                    <RadioButton-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Multi City"-->
+<!--                        />-->
 
-            </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/roundTrip_layout"
+                    android:visibility="visible"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="From"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/textField"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="To"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp"
+                            android:inputType="text" />
+                    </com.google.android.material.textfield.TextInputLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+                <Switch
+                    android:id="@+id/simpleSwitch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="Direct Flights" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add On Services"
+                    android:textColor="@color/black"/>
+                <ToggleButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/toggle"/>
+</LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/departbutton"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:text="Depart"
+                        android:textSize="14sp"
+                        app:icon="@android:drawable/ic_menu_my_calendar" />
+
+                    <Button
+                        android:id="@+id/returnbutton"
+                        android:layout_width="wrap_content"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Return"
+                        android:textSize="14sp"
+                        app:icon="@android:drawable/ic_menu_my_calendar" />
+
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Class"/>
+                        <Spinner
+                            android:layout_width="140dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/spinner"
+                            android:autofillHints="Class"
+                            android:spinnerMode="dropdown"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Adults(18+)"/>
+                        <Spinner
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/adults"
+                            android:spinnerMode="dropdown"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Child (2-12 yrs)"/>
+                        <Spinner
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/childrens"
+                            android:spinnerMode="dropdown"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:id="@+id/search_flights"
+                    android:layout_height="50dp"
+                    android:text="Search Flights"/>
+
+            </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -306,22 +484,22 @@
                     </FrameLayout>
                 </LinearLayout>
             </HorizontalScrollView>
-
-
         </LinearLayout>
     </ScrollView>
 
-<!--    <ImageButton-->
-<!--        android:id="@+id/imageButton"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="116dp"-->
-<!--        android:layout_marginTop="24dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="@+id/textView6"-->
-<!--        app:layout_constraintStart_toEndOf="@+id/textView2"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.05"-->
-<!--        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />-->
+
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/imageButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="116dp"-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/textView6"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/textView2"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.05"-->
+    <!--        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
