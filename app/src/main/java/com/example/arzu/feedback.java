@@ -37,10 +37,6 @@ public class feedback extends AppCompatActivity {
                                         Snackbar.LENGTH_LONG)
                                 .setAction(
                                         "UNDO",
-
-                                        // If the Undo button
-                                        // is pressed, show
-                                        // the message using Toast
                                         new View.OnClickListener() {
                                             @Override
                                             public void onClick(View view)

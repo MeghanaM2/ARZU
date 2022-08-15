@@ -24,6 +24,7 @@ import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -253,7 +254,11 @@ public class homepage extends AppCompatActivity implements AdapterView.OnItemSel
 
     }
 
-
+   public void top(View v)
+   {
+       ScrollView sv= (ScrollView)findViewById(R.id.scrollViewMain);
+       sv.fullScroll(ScrollView.FOCUS_UP);
+   }
 
 
 

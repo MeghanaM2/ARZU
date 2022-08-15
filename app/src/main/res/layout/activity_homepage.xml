@@ -60,7 +60,7 @@
         app:layout_constraintVertical_bias="0.406" />
 
     <ScrollView
-        android:id="@+id/scrollView2"
+        android:id="@+id/scrollViewMain"
         android:layout_width="406dp"
         android:layout_height="608dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -272,6 +272,7 @@
                 android:textSize="20sp" />
 
 
+
             <HorizontalScrollView
                 android:id="@+id/horizontalScrollView"
                 android:layout_width="match_parent"
@@ -374,7 +375,10 @@
                     </FrameLayout>
                 </LinearLayout>
             </HorizontalScrollView>
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -382,6 +386,17 @@
                 android:text="Popular Places"
                 android:textSize="20sp" />
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:onClick="top"
+        android:backgroundTint="@color/green_marine"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/arrow_up_float" />
+
+</LinearLayout>
             <HorizontalScrollView
                 android:id="@+id/horizontalScrollView"
                 android:layout_width="match_parent"
@@ -484,6 +499,9 @@
                     </FrameLayout>
                 </LinearLayout>
             </HorizontalScrollView>
+
+
+
         </LinearLayout>
     </ScrollView>
 
