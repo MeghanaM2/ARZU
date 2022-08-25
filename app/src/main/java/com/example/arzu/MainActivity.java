@@ -14,9 +14,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.textfield.TextInputEditText;
+
 public class MainActivity extends AppCompatActivity {
     Button loginbtn;
-    EditText mailid;
+    TextInputEditText mailid;
     String username;
     private static final String TAG = "MainActivity";
     @Override
@@ -24,12 +26,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mailid =(EditText) findViewById(R.id.user);
+        mailid =(TextInputEditText) findViewById(R.id.user);
 
         username = mailid.getText().toString();
-
-
-
 
         loginbtn =(Button) findViewById(R.id.login_btn);
         loginbtn.setOnClickListener(new View.OnClickListener() {
@@ -41,9 +40,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     public void toastMsg(String msg) {
+        Toast.makeText(this,"hell0 - "+username ,Toast.LENGTH_SHORT).show();
 
         Intent i = new Intent(this,homepage.class);
         //i.putExtra("message_key", username);

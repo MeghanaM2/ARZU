@@ -139,8 +139,6 @@ public class homepage extends AppCompatActivity implements AdapterView.OnItemSel
                         }
                     }
                 }).start();
-
-
             }
             Handler handle = new Handler() {
                 @Override
@@ -258,6 +256,13 @@ public class homepage extends AppCompatActivity implements AdapterView.OnItemSel
    {
        ScrollView sv= (ScrollView)findViewById(R.id.scrollViewMain);
        sv.fullScroll(ScrollView.FOCUS_UP);
+   }
+
+   public void bookflight (View v)
+   {
+       Intent i = new Intent(this,flightbook.class);
+       startActivity(i);
+       finish();
    }
 
 

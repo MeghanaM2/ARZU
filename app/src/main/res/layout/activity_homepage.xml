@@ -287,12 +287,14 @@
                     <FrameLayout
                         android:layout_width="200dp"
                         android:layout_height="200dp"
+                        android:id="@+id/place"
                         android:padding="5dp">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:elevation="10dp"
+                            android:onClick="bookflight"
                             app:cardCornerRadius="20dp">
 
                             <ImageView
