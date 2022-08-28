@@ -8,6 +8,7 @@ import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class flightbook extends AppCompatActivity {
@@ -15,14 +16,13 @@ public class flightbook extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flightbook);
-        Button btn = (Button) findViewById(R.id.btnShow);
+        ImageView btn = (ImageView) findViewById(R.id.roundedImageView);
         registerForContextMenu(btn);
     }
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
-        menu.setHeaderTitle("");
-        menu.add(0, v.getId(), 0, "Upload");
+        menu.setHeaderTitle("South Korea");
         menu.add(0, v.getId(), 0, "Search");
         menu.add(0, v.getId(), 0, "Share");
         menu.add(0, v.getId(), 0, "Bookmark");
