@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.arzu">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,9 +16,14 @@
         android:theme="@style/Theme.ARZU"
         tools:targetApi="31">
         <activity
+            android:name=".schedule_time"
+            android:exported="false" />
+        <activity
+            android:name=".Explore"
+            android:exported="false" />
+        <activity
             android:name=".feedback"
             android:exported="false" />
-
         <activity
             android:name=".flightbook"
             android:exported="false" />

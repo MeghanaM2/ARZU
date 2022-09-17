@@ -7,7 +7,6 @@
         app:showAsAction="ifRoom"
         android:title="Compose">
     </item>
-
     <item
         android:id="@+id/miProfile"
         android:icon="@drawable/ic_baseline_account_box_24"
@@ -15,6 +14,8 @@
         android:title="Profile">
     </item>
         <group android:checkableBehavior="single">
+            <item android:id="@+id/schedule"
+                android:title="Schedule" />
             <item android:id="@+id/feedback"
                 android:icon="@drawable/ic_baseline_chat_24"
                 android:title="Feedback" />
@@ -22,6 +23,7 @@
                 android:title="About Us"/>
             <item android:id="@+id/contact_us"
                 android:title="Contact Us" />
+
 
     </group>
 

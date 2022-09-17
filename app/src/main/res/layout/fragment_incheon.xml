@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".incheon">
+    <LinearLayout
+        android:id="@+id/fragment_container"
+        android:foregroundGravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/incheon" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:padding="20sp"
+            android:text="Incheon, a South Korean city bordering the capital of Seoul, has long been a transportation hub. The ultramodern, massive Incheon International Airport, with railway connections to Seoul, features a casino, spa and golf course. Yeonan Pier, close to the popular Incheon Fish Market, is the starting point for many boat tours. Incheon is also known for its beach-lined islands, including Yeongjong and Muui-dong."
+            android:textSize="20sp" />
+        </ScrollView>
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/java"
+        android:title="2:00 PM - 2:00 AM" />
+
+    <item
+        android:id="@+id/kotlin"
+        android:title="9:00 PM - 2:00 AM" />
+
+    <item
+        android:id="@+id/android"
+        android:title="10:00 AM - 2:00 AM" />
+
+
+
+</menu>

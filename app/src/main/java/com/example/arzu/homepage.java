@@ -22,6 +22,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
+import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
@@ -50,10 +52,12 @@ public class homepage extends AppCompatActivity implements AdapterView.OnItemSel
     RadioGroup radioGroup;
     ProgressDialog progressDoalog;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
+
         departbtn=(Button)findViewById(R.id.departbutton);
         returnbtn=(Button)findViewById(R.id.returnbutton);
         search=(Button)findViewById(R.id.search_flights);
@@ -62,6 +66,10 @@ public class homepage extends AppCompatActivity implements AdapterView.OnItemSel
         one_way = (RadioButton) findViewById(R.id.oneway);
         radioGroup=(RadioGroup)findViewById(R.id.radioGroup);
         ToggleButton toggle = (ToggleButton) findViewById(R.id.toggle);
+
+
+
+
 
         round_trip.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -187,7 +195,6 @@ public class homepage extends AppCompatActivity implements AdapterView.OnItemSel
 
                             @Override
                             public void onDateSet(DatePicker view, int year, int month, int
-
                                     dayOfMonth) {
 
                                 returnbtn.setText(dayOfMonth+"/"+(month + 1)+"/"+year);
@@ -229,6 +236,10 @@ public class homepage extends AppCompatActivity implements AdapterView.OnItemSel
             case R.id.feedback:
                 Intent in = new Intent(this,feedback.class);
                 startActivity(in);
+                finish();
+            case R.id.schedule:
+                Intent sc = new Intent(this,schedule_time.class);
+                startActivity(sc);
                 finish();
             default:
                 return super.onOptionsItemSelected(item);
