@@ -1,8 +1,17 @@
 package com.example.arzu;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.MenuItem;
@@ -15,7 +24,7 @@ import android.widget.Toast;
 import com.google.android.material.snackbar.Snackbar;
 
 public class flightbook extends AppCompatActivity {
-    Button button;
+    Button button,bookbtn;
     View v;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +34,23 @@ public class flightbook extends AppCompatActivity {
         registerForContextMenu(btn);
 
         button = (Button) findViewById(R.id.clickBtn);
+        bookbtn = (Button) findViewById(R.id.book);
+
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+        {
+            NotificationChannel channel = new NotificationChannel("My Notification","My Notification",NotificationManager.IMPORTANCE_DEFAULT);
+            NotificationManager manager = getSystemService(NotificationManager.class);
+            manager.createNotificationChannel(channel);
+        }
+
+        bookbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+              //  Toast.makeText(flightbook.this, "Added to Wish Tour list", Toast.LENGTH_SHORT).show();
+
+                addNotification();
+            }
+        });
 
         // Setting onClick behavior to the button
         button.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +74,23 @@ public class flightbook extends AppCompatActivity {
                 popupMenu.show();
             }
         });
+    }
+
+
+    private void addNotification() {
+        Bitmap largeicon = BitmapFactory.decodeResource(getResources(),R.drawable.aircraft);
+//
+        NotificationCompat.Builder builder =
+                new NotificationCompat.Builder(this,"My Notification");
+        builder.setSmallIcon(R.drawable.arip);
+        builder.setLargeIcon(largeicon);
+        builder.setContentTitle("Ticket Booked For Korea");
+        builder.setContentText("Thank you for booking flight with ArZu");
+        builder.setAutoCancel(true);
+        NotificationManagerCompat managerCompact = NotificationManagerCompat.from(this) ;
+        managerCompact.notify(1, builder.build());
+
+//
     }
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {

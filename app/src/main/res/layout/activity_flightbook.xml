@@ -154,6 +154,7 @@
 
         <Button
             android:id="@+id/book"
+            android:onClick="addNotification"
             android:layout_width="200dp"
             android:layout_height="70dp"
             android:layout_gravity="center"

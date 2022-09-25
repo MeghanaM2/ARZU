@@ -19,7 +19,7 @@ public class feedback extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
         WebView w = (WebView) findViewById(R.id.web);
-        w.loadUrl("https://www.holidify.com/collections/best-places-in-the-world");
+        w.loadUrl("https://www.holidify.com/country/india/places-to-visit.html");
         w.getSettings().setJavaScriptEnabled(true);
         w.setWebViewClient(new WebViewClient());
         Button submit = (Button)findViewById(R.id.submit_feedback);

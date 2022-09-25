@@ -4,15 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/drawable/background_splashscreen.xml" value="0.1495" />
+        <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/drawable/ic_baseline_arrow_upward_24.xml" value="0.171" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/drawable/ic_baseline_chat_24.xml" value="0.162" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/drawable/toast_bg.xml" value="0.1" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_aboutus.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_after_notification.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_explore.xml" value="0.1" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_feedback.xml" value="0.2" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_flightbook.xml" value="0.17037037037037037" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_homepage.xml" value="0.1" />
-        <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_main.xml" value="0.18" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_notification.xml" value="0.22" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_schedule_time.xml" value="0.1" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/activity_splashscreen.xml" value="0.15625" />
         <entry key="..\:/Users/Meghana.M/AndroidStudioProjects/ARZU/app/src/main/res/layout/card.xml" value="0.22" />

@@ -237,10 +237,12 @@ public class homepage extends AppCompatActivity implements AdapterView.OnItemSel
                 Intent in = new Intent(this,feedback.class);
                 startActivity(in);
                 finish();
+                return true;
             case R.id.schedule:
                 Intent sc = new Intent(this,schedule_time.class);
                 startActivity(sc);
                 finish();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

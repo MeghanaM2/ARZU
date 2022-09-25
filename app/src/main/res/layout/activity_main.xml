@@ -9,6 +9,31 @@
     tools:context=".MainActivity">
 
     <!--        android:autoLink="web" for finding web link in the text -->
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="8dp"
+        android:text="User Name"
+        app:layout_constraintBottom_toTopOf="@+id/user"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:text="Password"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="399dp"
@@ -23,46 +48,48 @@
 
 
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:hint="Email"
-        app:layout_constraintBottom_toTopOf="@+id/textField"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textField"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="28dp"-->
+<!--        android:hint="User Name"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textField"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/user"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:inputType="textEmailAddress"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            tools:layout_editor_absoluteX="0dp" />
-    </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/user"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
+<!--            tools:layout_editor_absoluteX="0dp" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textField"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:hint="Password"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        app:endIconMode="password_toggle">
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textField"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Password"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/textView3"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        app:endIconMode="password_toggle">-->
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:inputType="textPassword"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3"
-            tools:layout_editor_absoluteX="0dp" />
-    </com.google.android.material.textfield.TextInputLayout>
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:inputType="textPassword"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView3"-->
+<!--            tools:layout_editor_absoluteX="0dp" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
 
 
     <CheckBox
@@ -126,5 +153,33 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+
+        android:layout_width="299dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="72dp"
+
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColorHighlight="#6D7973"
+        android:textColorLink="#6D7973"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.394"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
