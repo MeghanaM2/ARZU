@@ -79,7 +79,6 @@ public class flightbook extends AppCompatActivity {
 
     private void addNotification() {
         Bitmap largeicon = BitmapFactory.decodeResource(getResources(),R.drawable.aircraft);
-//
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(this,"My Notification");
         builder.setSmallIcon(R.drawable.arip);
@@ -90,7 +89,6 @@ public class flightbook extends AppCompatActivity {
         NotificationManagerCompat managerCompact = NotificationManagerCompat.from(this) ;
         managerCompact.notify(1, builder.build());
 
-//
     }
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {

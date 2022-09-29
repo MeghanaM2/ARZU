@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toastMsg(String msg) {
-        Toast.makeText(this,"hell0 - "+username ,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"hell - "+username ,Toast.LENGTH_SHORT).show();
 
         Intent i = new Intent(this,homepage.class);
         //i.putExtra("message_key", username);
