@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
         if (sharedpreferences.contains(Name)) {
             name.setText(sharedpreferences.getString(Name, ""));
-
         }
+
 
 
 
